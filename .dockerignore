@@ -1,0 +1,90 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Version control
+.gitlab-ci.yml
+.github/
+.gitmodules
+
+# Dependencies & Cache
+node_modules/
+npm-debug.log
+npm-shrinkwrap.json
+yarn-error.log
+package-lock.json
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+.env.example
+
+# Build artifacts
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+
+# Test & Coverage
+coverage/
+.nyc_output/
+test-output.txt
+lcov-report/
+test/
+tests/
+
+# Documentation
+README.md
+DEPLOYMENT.md
+ARCHITECTURE.md
+ADVANCED.md
+FINAL_DASHBOARD.md
+GITLAB_INTEGRATION.md
+HACKATHON_DEMO_PLAN.md
+HACKATHON_SUBMISSION.md
+IMPLEMENTATION_SUMMARY.md
+LIVE_TEST_STATUS.md
+PROJECT_COMPLETE_SUMMARY.md
+PROJECT_STATUS.md
+QUICK_START.md
+REAL_WORLD_TESTING.md
+SAMPLE_FAILURES.md
+SUBMISSION_CHECKLIST.md
+TEST_EXECUTION_REPORT.md
+TEST_PAYLOAD.md
+TEST_RESULTS.md
+TESTING_QUICK_START.md
+*.md
+
+# Logs
+logs/
+*.log
+
+# IDE & Editor
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# CI/CD
+.circleci/
+.travis.yml
+azure-pipelines.yml
+
+# Docker
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile.dev
+.dockerignore
+
+# Misc
+.eslintignore
+.prettierignore
+jest.config.js
+*.pptx

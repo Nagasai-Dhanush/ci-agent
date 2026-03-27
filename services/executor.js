@@ -1,8 +1,33 @@
 const axios = require("axios");
 const log = require("../utils/logger");
-const pRetry = require("p-retry");
 
 const TOKEN = process.env.GITLAB_TOKEN;
+
+// Simple retry wrapper to replace p-retry ESM module
+async function pRetry(fn, options = {}) {
+    const { retries = 2, minTimeout = 1000, onFailedAttempt } = options;
+    let lastError;
+    
+    for (let attempt = 1; attempt <= retries + 1; attempt++) {
+        try {
+            return await fn();
+        } catch (err) {
+            lastError = err;
+            const retriesLeft = retries + 1 - attempt;
+            if (retriesLeft > 0) {
+                if (onFailedAttempt) {
+                    onFailedAttempt({ 
+                        attemptNumber: attempt, 
+                        retriesLeft,
+                        status: err.status
+                    });
+                }
+                await new Promise(resolve => setTimeout(resolve, minTimeout));
+            }
+        }
+    }
+    throw lastError;
+}
 
 async function executeAction({ 
     action, 

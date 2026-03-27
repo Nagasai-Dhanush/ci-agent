@@ -1,8 +1,32 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Secrets & Environment
 .env
+.env.local
+.env.*.local
+
+# Build artifacts
 dist/
 build/
+
+# Logs & Coverage
+logs/
+*.log
+coverage/
+test-output.txt
+lcov-report/
+
+# Documentation
 Deployment.md
 gitlab_integration.md
 hackathon_report.md
 hackathon_presentation.pptx
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
