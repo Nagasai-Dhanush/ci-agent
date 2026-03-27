@@ -1,92 +1,40 @@
-// services/ai.js
-const axios = require("axios");
+// services/ai.js - LLM-powered error classification with chain-of-thought
+const log = require("../utils/logger");
+const {
+    analyzeWithChainOfThought,
+    heuristicClassification
+} = require("../utils/llm-reasoning");
 
-function fallbackClassifier(logs) {
-    if (logs.includes("ECONNRESET")) {
-        return {
-            type: "env_issue",
-            reason: "Network connection reset",
-            confidence: 0.9
-        };
-    }
-
-    if (logs.includes("npm ERR")) {
-        return {
-            type: "dependency_issue",
-            reason: "NPM dependency failure",
-            confidence: 0.85
-        };
-    }
-
-    if (logs.includes("AssertionError")) {
-        return {
-            type: "flaky_test",
-            reason: "Assertion failure (likely flaky)",
-            confidence: 0.8
-        };
-    }
-
-    return null;
-}
-
-async function classifyError(input) {
-    // 🔴 STEP 1: Try fallback first
-    const fallback = fallbackClassifier(input);
-
-    if (fallback) {
-        console.log("⚡ Fallback rule triggered");
-        return fallback;
-    }
-
-    // 🔴 STEP 2: Use Featherless AI only if needed
-    const response = await axios.post(
-        "https://api.featherless.ai/v1/chat/completions",
-        {
-            model: "featherless-gpt",
-            messages: [
-                {
-                    role: "user",
-                    content: `
-Classify CI/CD failure.
-
-Types:
-- flaky_test
-- dependency_issue
-- env_issue
-- code_error
-
-Return STRICT JSON:
-{
- "type": "...",
- "reason": "...",
- "confidence": 0-1
-}
-
-${input}
-`
-                }
-            ]
-        },
-        {
-            headers: {
-                Authorization: `Bearer ${process.env.FEATHERLESS_API_KEY}`
-            }
-        }
-    );
-
-    let result;
+async function classifyError(errorLogs, enrichmentData = {}) {
+    log.info("Starting error classification");
 
     try {
-        result = JSON.parse(response.data.choices[0].message.content);
-    } catch {
-        result = {
-            type: "code_error",
-            reason: "Parsing failure",
-            confidence: 0.5
-        };
-    }
+        // Step 1: Try chain-of-thought reasoning with Featherless AI
+        log.debug("Attempting chain-of-thought analysis");
+        const llmAnalysis = await analyzeWithChainOfThought(errorLogs, enrichmentData);
 
-    return result;
+        log.info("LLM analysis successful", {
+            type: llmAnalysis.type,
+            confidence: llmAnalysis.confidence,
+            severity: llmAnalysis.severity
+        });
+
+        return llmAnalysis;
+    } catch (err) {
+        log.warn("LLM analysis failed, falling back to heuristics", {
+            error: err.message
+        });
+
+        // Step 2: Fallback to heuristic classification
+        const heuristicResult = heuristicClassification(errorLogs, enrichmentData);
+
+        log.info("Heuristic classification used", {
+            type: heuristicResult.type,
+            confidence: heuristicResult.confidence
+        });
+
+        return heuristicResult;
+    }
 }
 
 module.exports = { classifyError };

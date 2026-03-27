@@ -1,0 +1,2943 @@
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-123",
+  "projectId": "project-456",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "failed"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-1",
+  "status": "manual_review"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-2",
+  "status": "failed"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-4",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-5",
+  "status": "failed"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-7",
+  "status": "resolved"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-0",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-1",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-2",
+  "projectId": "real-proj",
+  "status": "failed",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-3",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-4",
+  "projectId": "real-proj",
+  "status": "manual_review",
+  "errorType": "code_error"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p20",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p21",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p22",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p23",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p24",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p25",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p26",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p27",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p28",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p29",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p30",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p31",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p32",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p33",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p34",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p35",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p36",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p37",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p38",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p39",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p40",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p41",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p42",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p43",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p44",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p45",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p46",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p47",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p48",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p49",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p50",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p51",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p52",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p53",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p54",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p55",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p56",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p57",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p58",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p59",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p60",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p61",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p62",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p63",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p64",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p65",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p66",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p67",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p68",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p69",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p70",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p71",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p72",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p73",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p74",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p75",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p76",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p77",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p78",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p79",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p80",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p81",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p82",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p83",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p84",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p85",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p86",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p87",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p88",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p89",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p90",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p91",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p92",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p93",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p94",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p95",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p96",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p97",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p98",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:14 [INFO]: Execution tracked {
+  "pipelineId": "p99",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "flaky_test",
+  "action": "retry"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "dependency_issue",
+  "action": "reinstall"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "env_issue",
+  "action": "retry"
+}
+2026-03-27 20:01:14 [INFO]: Max attempts reached, escalating to manual {
+  "errorType": "flaky_test",
+  "retryCount": 2,
+  "maxAttempts": 2
+}
+2026-03-27 20:01:14 [WARN]: Unknown error type in playbook {
+  "errorType": "unknown_error"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "code_error",
+  "action": "notify"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "permission_error",
+  "action": "notify"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "timeout",
+  "action": "retry"
+}
+2026-03-27 20:01:14 [INFO]: Playbook action selected {
+  "errorType": "rate_limit",
+  "action": "retry"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "flaky_test",
+  "action": "retry"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "dependency_issue",
+  "action": "reinstall"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "env_issue",
+  "action": "retry"
+}
+2026-03-27 20:01:29 [INFO]: Max attempts reached, escalating to manual {
+  "errorType": "flaky_test",
+  "retryCount": 2,
+  "maxAttempts": 2
+}
+2026-03-27 20:01:29 [WARN]: Unknown error type in playbook {
+  "errorType": "unknown_error"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "code_error",
+  "action": "notify"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "permission_error",
+  "action": "notify"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "timeout",
+  "action": "retry"
+}
+2026-03-27 20:01:29 [INFO]: Playbook action selected {
+  "errorType": "rate_limit",
+  "action": "retry"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-123",
+  "projectId": "project-456",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "failed"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-1",
+  "status": "manual_review"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-2",
+  "status": "failed"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-4",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-5",
+  "status": "failed"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-7",
+  "status": "resolved"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-0",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-1",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-2",
+  "projectId": "real-proj",
+  "status": "failed",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-3",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-4",
+  "projectId": "real-proj",
+  "status": "manual_review",
+  "errorType": "code_error"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p20",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p21",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p22",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p23",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p24",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p25",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p26",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p27",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p28",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p29",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p30",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p31",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p32",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p33",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p34",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p35",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p36",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p37",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p38",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p39",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p40",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p41",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p42",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p43",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p44",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p45",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p46",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p47",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p48",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p49",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p50",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p51",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p52",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p53",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p54",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p55",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p56",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p57",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p58",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p59",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p60",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p61",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p62",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p63",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p64",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p65",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p66",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p67",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p68",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p69",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p70",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p71",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p72",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p73",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p74",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p75",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p76",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p77",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p78",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p79",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p80",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p81",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p82",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p83",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p84",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p85",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p86",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p87",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p88",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p89",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p90",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p91",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p92",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p93",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p94",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p95",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p96",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p97",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p98",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:01:29 [INFO]: Execution tracked {
+  "pipelineId": "p99",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "flaky_test",
+  "action": "retry"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "dependency_issue",
+  "action": "reinstall"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "env_issue",
+  "action": "retry"
+}
+2026-03-27 20:02:07 [INFO]: Max attempts reached, escalating to manual {
+  "errorType": "flaky_test",
+  "retryCount": 2,
+  "maxAttempts": 2
+}
+2026-03-27 20:02:07 [WARN]: Unknown error type in playbook {
+  "errorType": "unknown_error"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "code_error",
+  "action": "notify"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "permission_error",
+  "action": "notify"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "timeout",
+  "action": "retry"
+}
+2026-03-27 20:02:07 [INFO]: Playbook action selected {
+  "errorType": "rate_limit",
+  "action": "retry"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-123",
+  "projectId": "project-456",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-1",
+  "status": "failed"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-1",
+  "status": "manual_review"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-1",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "test-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-2",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-2",
+  "status": "failed"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-3",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-4",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-5",
+  "status": "failed"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-5",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "proj-6",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-7",
+  "status": "resolved"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-8",
+  "status": "resolved",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "proj-9",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-0",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-1",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-2",
+  "projectId": "real-proj",
+  "status": "failed",
+  "errorType": "dependency_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-3",
+  "projectId": "real-proj",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "pipeline-4",
+  "projectId": "real-proj",
+  "status": "manual_review",
+  "errorType": "code_error"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p0",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p1",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p2",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p3",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p4",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p5",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p6",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p7",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p8",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p9",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p10",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p11",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p12",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p13",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p14",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p15",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p16",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p17",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p18",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p19",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p20",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p21",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p22",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p23",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p24",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p25",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p26",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p27",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p28",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p29",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p30",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p31",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p32",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p33",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p34",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p35",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p36",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p37",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p38",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p39",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p40",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p41",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p42",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p43",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p44",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p45",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p46",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p47",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p48",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p49",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p50",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p51",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p52",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p53",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p54",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p55",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p56",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p57",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p58",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p59",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p60",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p61",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p62",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p63",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p64",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p65",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p66",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p67",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p68",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p69",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p70",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p71",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p72",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p73",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p74",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p75",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p76",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p77",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p78",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p79",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p80",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p81",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p82",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p83",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p84",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p85",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p86",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p87",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p88",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p89",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p90",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p91",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p92",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p93",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p94",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p95",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p96",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p97",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "env_issue"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p98",
+  "projectId": "high-volume",
+  "status": "resolved",
+  "errorType": "flaky_test"
+}
+2026-03-27 20:02:07 [INFO]: Execution tracked {
+  "pipelineId": "p99",
+  "projectId": "high-volume",
+  "status": "failed",
+  "errorType": "env_issue"
+}

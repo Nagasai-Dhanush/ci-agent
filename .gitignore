@@ -2,3 +2,7 @@ node_modules/
 .env
 dist/
 build/
+Deployment.md
+gitlab_integration.md
+hackathon_report.md
+hackathon_presentation.pptx
