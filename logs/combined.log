@@ -2966,3 +2966,109 @@
 2026-03-28 09:25:46 [INFO]: Server running on port 3000 {}
 2026-03-28 09:26:04 [INFO]: Server running on port 3000 {}
 2026-03-28 09:26:37 [INFO]: Server running on port 3000 {}
+2026-03-28 09:45:22 [INFO]: Server running on port 3000 {}
+2026-03-28 09:52:49 [INFO]: Server running on port 3000 {}
+2026-03-28 10:25:29 [INFO]: Server running on port 3000 {}
+2026-03-28 10:29:09 [INFO]: Server running on port 3000 {}
+2026-03-28 10:40:44 [INFO]: Server running on port 3000 {}
+2026-03-28 10:41:50 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 10:41:50 [INFO]: Starting error classification {}
+2026-03-28 10:41:52 [WARN]: Chain-of-thought analysis failed {
+  "error": "Request failed with status code 404",
+  "status": 404
+}
+2026-03-28 10:41:52 [WARN]: LLM analysis failed, falling back to heuristics {
+  "error": "Request failed with status code 404"
+}
+2026-03-28 10:41:52 [INFO]: Heuristic classification used {
+  "type": "flaky_test",
+  "confidence": 0.48
+}
+2026-03-28 10:41:52 [INFO]: Manual review notification sent {
+  "project": "ci-agent"
+}
+2026-03-28 10:49:49 [INFO]: Server running on port 3000 {}
+2026-03-28 10:50:45 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 10:50:45 [INFO]: Starting error classification {}
+2026-03-28 10:50:46 [WARN]: Chain-of-thought analysis failed {
+  "error": "Request failed with status code 404",
+  "status": 404
+}
+2026-03-28 10:50:46 [WARN]: LLM analysis failed, falling back to heuristics {
+  "error": "Request failed with status code 404"
+}
+2026-03-28 10:50:46 [INFO]: Heuristic classification used {
+  "type": "flaky_test",
+  "confidence": 0.48
+}
+2026-03-28 10:50:48 [INFO]: Manual review notification sent {
+  "project": "ci-agent"
+}
+2026-03-28 10:53:08 [INFO]: Server running on port 3000 {}
+2026-03-28 10:55:29 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 10:55:29 [INFO]: Starting error classification {}
+2026-03-28 10:55:30 [WARN]: Chain-of-thought analysis failed {
+  "error": "Request failed with status code 404",
+  "status": 404
+}
+2026-03-28 10:55:30 [WARN]: LLM analysis failed, falling back to heuristics {
+  "error": "Request failed with status code 404"
+}
+2026-03-28 10:55:30 [INFO]: Heuristic classification used {
+  "type": "flaky_test",
+  "confidence": 0.48
+}
+2026-03-28 10:55:30 [INFO]: Manual review notification sent {
+  "project": "ci-agent"
+}
+2026-03-28 11:07:56 [INFO]: Server running on port 3000 {}
+2026-03-28 11:09:02 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 11:09:02 [INFO]: Starting error classification {}
+2026-03-28 11:09:08 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 1,
+  "severity": "low"
+}
+2026-03-28 11:09:08 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415006319,
+  "dryRun": false
+}
+2026-03-28 11:09:08 [INFO]: Execution tracked {
+  "pipelineId": 2415006319,
+  "projectId": 80648230,
+  "status": "resolved"
+}
+2026-03-28 11:13:39 [INFO]: Server running on port 3000 {}
+2026-03-28 11:14:53 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 11:14:53 [INFO]: Starting error classification {}
+2026-03-28 11:14:59 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 1,
+  "severity": "low"
+}
+2026-03-28 11:14:59 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415009417,
+  "dryRun": false
+}
+2026-03-28 11:14:59 [INFO]: Execution tracked {
+  "pipelineId": 2415009417,
+  "projectId": 80648230,
+  "status": "resolved"
+}

@@ -1,9 +1,5 @@
-stages:
-  - test
-
 fail_job:
   stage: test
   script:
-    - echo "Forcing pipeline failure"
-    - exit 1
-# trigger again
+    - echo "Simulating failure"
+    - exit 1cl

@@ -98,7 +98,7 @@ router.post("/gitlab", async (req, res) => {
         const errorSection = extractError(logs);
         const keyword = extractKeyword(logs);
         const stackTrace = extractStackTrace(logs);
-        const metadata = parseLogMetadata(logs);
+        const metadata = {}
 
         // ✅ STEP 6: Enrichment (safe)
         let enrichmentData = { source: "none", signals: [] };

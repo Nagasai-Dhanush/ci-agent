@@ -53,7 +53,7 @@ Provide ONLY valid JSON, no markdown code blocks.
         const response = await axios.post(
             "https://api.featherless.ai/v1/chat/completions",
             {
-                model: "featherless-gpt",
+                model: "Qwen/Qwen2.5-7B-Instruct",
                 messages: [
                     {
                         role: "system",
@@ -76,7 +76,29 @@ Provide ONLY valid JSON, no markdown code blocks.
             }
         );
 
-        const content = response.data.choices[0].message.content;
+        let content = response.data.choices[0].message.content;
+
+// Try extracting JSON safely
+let parsed;
+
+try {
+    const match = content.match(/\{[\s\S]*\}/);
+    if (!match) throw new Error("No JSON found");
+
+    parsed = JSON.parse(match[0]);
+} catch (e) {
+    console.warn("⚠️ Failed to parse AI JSON, raw output:", content);
+
+    // fallback safe response
+    return {
+        type: "unknown",
+        confidence: 0.5,
+        severity: "medium",
+        suggested_action: "notify"
+    };
+}
+
+return parsed;
         log.trace("Raw LLM response received", { length: content.length });
 
         // Try to extract JSON (handle markdown code blocks)
