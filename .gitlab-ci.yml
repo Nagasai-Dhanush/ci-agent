@@ -1,5 +1,8 @@
+stages:
+  - test
+
 fail_job:
   stage: test
   script:
-    - echo "Simulating failure"
-    - exit 1cl
+    - echo "FORCING FAILURE"
+    - exit 1
