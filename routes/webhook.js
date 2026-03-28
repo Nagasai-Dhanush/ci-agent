@@ -6,19 +6,17 @@ const {
     extractError,
     extractKeyword,
     extractStackTrace,
-    parseLogMetadata,
-    extractLogSection
+    parseLogMetadata
 } = require("../utils/parser");
 const { enrichError, analyzeEnrichment } = require("../services/brightdata");
 const { classifyError } = require("../services/ai");
-const { getAction, getExplanation } = require("../services/playbook");
+const { getExplanation } = require("../services/playbook");
 const { executeAction } = require("../services/executor");
 const { sendSlack, sendManualReviewNotification } = require("../services/slack");
 const { trackExecution, getProjectMetrics, getSuccessRate } = require("../services/monitor");
 const {
     shouldExecuteAction,
     validateAction,
-    getExplanationTemplate,
     SAFETY_LIMITS
 } = require("../config/playbook-guard");
 const log = require("../utils/logger");
@@ -27,300 +25,180 @@ const { getRetryCount, incrementRetry } = require("../store");
 
 router.post("/gitlab", async (req, res) => {
     const requestId = Math.random().toString(36).slice(2, 10);
-    log.info("🎯 Webhook received", { requestId });
+    console.log("=== WEBHOOK HIT ===", requestId);
 
     try {
         const event = req.body;
 
-        // ✅ STEP 1: Validate event structure
-        if (!event || typeof event !== 'object') {
-            log.warn("Malformed webhook - empty or non-object body", { requestId });
+        // 🔍 DEBUG incoming payload
+        console.log("EVENT:", JSON.stringify(event, null, 2));
+
+        // ✅ STEP 1: Validate event
+        if (!event || typeof event !== "object") {
+            console.warn("⚠️ Invalid event");
             return res.status(400).json({ error: "Invalid event" });
         }
 
         if (event.object_kind !== "pipeline") {
-            log.debug("Ignoring non-pipeline event", { requestId });
+            console.log("Ignoring non-pipeline event");
             return res.sendStatus(200);
         }
 
         if (!event.object_attributes?.status) {
-            log.warn("Missing object_attributes.status", { requestId });
+            console.warn("Missing status");
             return res.sendStatus(200);
         }
 
         if (event.object_attributes.status !== "failed") {
-            log.debug("Ignoring non-failure event", { requestId });
+            console.log("Ignoring non-failed pipeline");
             return res.sendStatus(200);
         }
 
-        if (!event.project || !event.project.id) {
-            log.warn("Event missing project data", { requestId });
-            return res.status(400).json({ error: "Missing project info" });
+        if (!event.project?.id) {
+            console.warn("Missing project info");
+            return res.sendStatus(200);
         }
 
         const projectId = event.project.id;
         const pipelineId = event.object_attributes.id;
         const projectName = event.project.name || "Unknown";
 
-        log.info("❌ Pipeline failed", {
-            requestId,
-            pipelineId,
-            projectName
-        });
+        console.log("❌ Pipeline failed:", projectName);
 
-        // ✅ STEP 2: Check retry guard
+        // ✅ STEP 2: Retry guard
         const retryCount = getRetryCount(pipelineId);
         if (retryCount >= SAFETY_LIMITS.max_retries_per_pipeline) {
-            log.warn("⚠️ Max retries reached - escalating to manual", {
-                requestId,
-                pipelineId,
-                retryCount,
-                maxRetries: SAFETY_LIMITS.max_retries_per_pipeline
-            });
-
-            trackExecution(pipelineId, projectId, {
-                requestId,
-                status: "manual_review",
-                reason: "Max retries exceeded"
-            });
-
+            console.warn("Max retries reached");
             return res.sendStatus(200);
         }
 
-        // ✅ STEP 3: Get failed job details
+        // ✅ STEP 3: Get failed job
         const failedJob = getFailedJob(event);
-        if (!failedJob) {
-            log.warn("No failed job found in event", { requestId, pipelineId });
+
+        // 🔥 GUARD 1
+        if (!failedJob || !failedJob.id) {
+            console.warn("⚠️ No valid failed job found");
             return res.sendStatus(200);
         }
 
-        log.debug("🔍 Fetching job logs", {
-            requestId,
-            jobId: failedJob.id
-        });
+        console.log("Failed Job:", failedJob.id);
 
-        // ✅ STEP 4: Fetch job logs
+        // ✅ STEP 4: Fetch logs
         const logs = await getJobLogs(projectId, failedJob.id);
-        log.info("📄 Logs fetched", {
-            requestId,
-            logSize: logs.length
-        });
 
-        // ✅ STEP 5: Parse logs thoroughly
+        // 🔥 GUARD 2
+        if (!logs || logs.length === 0) {
+            console.warn("⚠️ No logs found");
+            return res.sendStatus(200);
+        }
+
+        console.log("Logs fetched");
+
+        // ✅ STEP 5: Parse logs
         const errorSection = extractError(logs);
         const keyword = extractKeyword(logs);
         const stackTrace = extractStackTrace(logs);
         const metadata = parseLogMetadata(logs);
 
-        log.debug("📊 Log parsing complete", {
-            requestId,
-            errorLength: errorSection.length,
-            hasStackTrace: !!stackTrace,
-            metadata
-        });
-
-        // ✅ STEP 6: Bright Data enrichment
+        // ✅ STEP 6: Enrichment (safe)
         let enrichmentData = { source: "none", signals: [] };
-
         try {
-            log.debug("🌐 Fetching Bright Data enrichment", {
-                requestId,
-                keyword
-            });
-
             enrichmentData = await enrichError(keyword);
-            const insights = analyzeEnrichment(enrichmentData);
-
-            log.info("✨ Bright Data enrichment complete", {
-                requestId,
-                insightCount: insights.length
-            });
-        } catch (err) {
-            log.warn("⚠️ Bright Data enrichment failed, continuing", {
-                requestId,
-                error: err.message
-            });
+        } catch (e) {
+            console.warn("Enrichment failed");
         }
 
-        // ✅ STEP 7: AI classification with reasoning
+        // ✅ STEP 7: AI classification
         const combinedInput = `
-ERROR LOGS:
+ERROR:
 ${errorSection}
 
-STACK TRACE:
-${stackTrace || "Not available"}
+STACK:
+${stackTrace || "N/A"}
 
-EXTERNAL SIGNALS:
-${JSON.stringify(enrichmentData).slice(0, 500)}
+EXTERNAL:
+${JSON.stringify(enrichmentData).slice(0, 300)}
 `;
-
-        log.debug("🤖 Starting AI classification", { requestId });
 
         const analysis = await classifyError(combinedInput, enrichmentData);
 
-        log.info("🧠 AI analysis complete", {
-            requestId,
-            errorType: analysis.type,
-            confidence: analysis.confidence,
-            severity: analysis.severity,
-            source: analysis.source
-        });
+        // 🔥 GUARD 3
+        if (!analysis || !analysis.type) {
+            console.warn("⚠️ Invalid AI response");
+            return res.sendStatus(200);
+        }
 
-        // ✅ STEP 8: Confidence check - safety guard
+        console.log("AI Result:", analysis.type);
+
+        // ✅ STEP 8: Confidence check
         if (analysis.confidence < SAFETY_LIMITS.min_confidence_for_action) {
-            log.warn("⚠️ Low confidence - requiring manual review", {
-                requestId,
-                confidence: analysis.confidence,
-                threshold: SAFETY_LIMITS.min_confidence_for_action
-            });
-
-            trackExecution(pipelineId, projectId, {
-                requestId,
-                status: "manual_review",
-                errorType: analysis.type,
-                confidence: analysis.confidence
-            });
-
             await sendManualReviewNotification({
                 project: projectName,
                 errorType: analysis.type,
-                reason: analysis.root_cause,
-                confidence: analysis.confidence,
-                timestamp: new Date().toISOString()
+                confidence: analysis.confidence
             });
-
             return res.sendStatus(200);
         }
 
-        // ✅ STEP 9: Validate action compatibility
+        // ✅ STEP 9: Validate action
         const selectedAction = analysis.suggested_action;
-        const actionValidation = validateAction(selectedAction, analysis.type);
+        const validation = validateAction(selectedAction, analysis.type);
 
-        if (!actionValidation.valid) {
-            log.warn("❌ Action validation failed", {
-                requestId,
-                action: selectedAction,
-                reason: actionValidation.reason
-            });
-
-            trackExecution(pipelineId, projectId, {
-                requestId,
-                status: "action_validation_failed",
-                errorType: analysis.type
-            });
-
+        if (!validation.valid) {
+            console.warn("Invalid action");
             return res.sendStatus(200);
         }
 
-        // ✅ STEP 10: Execution eligibility check
-        const canExecute = shouldExecuteAction(
-            analysis.confidence,
-            analysis.type,
-            retryCount
-        );
-
-        if (!canExecute.allowed) {
-            log.warn("⚠️ Cannot execute action", {
-                requestId,
-                reason: canExecute.reason,
-                confidence: analysis.confidence,
-                retryCount
-            });
-
-            trackExecution(pipelineId, projectId, {
-                requestId,
-                status: "execution_blocked",
-                errorType: analysis.type,
-                reason: canExecute.reason
-            });
-
-            return res.sendStatus(200);
-        }
-
-        // ✅ STEP 11: Execute remediation action
-        log.info("⚙️ Executing remediation action", {
-            requestId,
-            action: selectedAction,
-            pipelineId
-        });
-
+        // ✅ STEP 10: Execute action
         const executionResult = await executeAction({
             action: selectedAction,
             projectId,
-            pipelineId,
-            dryRun: false
+            pipelineId
         });
 
-        log.info("🚀 Action executed", {
-            requestId,
-            action: selectedAction,
-            success: executionResult.success,
-            message: executionResult.message
-        });
-
-        // ✅ STEP 12: Track execution
         incrementRetry(pipelineId);
 
         trackExecution(pipelineId, projectId, {
-            requestId,
             status: executionResult.success ? "resolved" : "failed",
-            errorType: analysis.type,
-            action: selectedAction,
-            confidence: analysis.confidence
+            action: selectedAction
         });
 
-        // ✅ STEP 13: Get project metrics for notification
-        const projectMetrics = getProjectMetrics(projectId);
-        const successRate = getSuccessRate(projectId);
-
-        // ✅ STEP 14: Send comprehensive Slack notification
-        const explanation = getExplanation(analysis.type, selectedAction, analysis.confidence);
+        // ✅ STEP 11: Slack
+        const explanation = getExplanation(
+            analysis.type,
+            selectedAction,
+            analysis.confidence
+        );
 
         await sendSlack({
             project: projectName,
             errorType: analysis.type,
-            reason: analysis.root_cause,
-            reasoning: analysis.reasoning || [],
-            confidence: analysis.confidence,
-            severity: analysis.severity,
             action: selectedAction,
             result: executionResult,
-            newPipelineId: executionResult.newPipelineId,
-            timestamp: new Date().toISOString(),
-            metrics: projectMetrics ? { successRate } : null,
             explanation: explanation.explanation
         });
 
-        log.info("✅ Workflow completed successfully", {
-            requestId,
-            pipelineId,
-            action: selectedAction,
-            success: executionResult.success
-        });
+        console.log("✅ Completed");
 
         return res.sendStatus(200);
 
     } catch (err) {
-        log.error("🔥 Webhook processing error", {
-            requestId,
-            error: err.message,
-            stack: err.stack
-        });
+        console.error("🔥 FULL ERROR OBJECT:");
+        console.error(err);
+
+        console.error("🔥 MESSAGE:", err.message);
+        console.error("🔥 STACK:", err.stack);
 
         return res.status(500).json({
-            error: "Internal server error",
+            error: err.message,
             requestId
         });
     }
 });
 
-// Health check endpoint
+// Health check
 router.get("/health", (req, res) => {
-    res.json({
-        status: "healthy",
-        timestamp: new Date().toISOString(),
-        uptime: process.uptime()
-    });
+    res.json({ status: "healthy" });
 });
 
 module.exports = router;

@@ -91,7 +91,7 @@ function parseEnrichmentData(enrichment) {
         suggestions: []
     };
 
-    if (enrichment.source === "local_patterns" && enrichment.knownIssues.length > 0) {
+    if (enrichment.source === "local_patterns" && enrichment.knownIssues?.length > 0) {
         signals.isKnownIssue = true;
         signals.suggestions = enrichment.knownIssues.map(issue => issue.description);
     } else if (enrichment.source === "brightdata" && enrichment.data?.results) {
@@ -102,9 +102,19 @@ function parseEnrichmentData(enrichment) {
     return signals;
 }
 
+/** Flat list of insight strings for logging and LLM context (webhook expects an array). */
+function analyzeEnrichment(enrichment) {
+    const signals = parseEnrichmentData(enrichment);
+    const insights = (signals.suggestions || []).map((s) =>
+        typeof s === "string" ? s : JSON.stringify(s)
+    );
+    return insights;
+}
+
 module.exports = {
     enrichError,
     getLocalEnrichment,
     parseEnrichmentData,
+    analyzeEnrichment,
     KNOWN_ISSUES
 };
