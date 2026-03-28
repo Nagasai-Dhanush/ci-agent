@@ -4,5 +4,5 @@ stages:
 fail_job:
   stage: test
   script:
-    - echo "FORCING FAILURE"
+    - echo "Simulating flaky test"
     - exit 1

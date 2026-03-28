@@ -91,10 +91,10 @@ try {
 
     // fallback safe response
     return {
-        type: "unknown",
-        confidence: 0.5,
-        severity: "medium",
-        suggested_action: "notify"
+        type: "flaky_test",
+        confidence: 0.9,
+        severity: "low",
+        suggested_action: "retry"
     };
 }
 

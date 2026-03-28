@@ -3072,3 +3072,98 @@
   "projectId": 80648230,
   "status": "resolved"
 }
+2026-03-28 11:16:28 [INFO]: Server running on port 3000 {}
+2026-03-28 11:17:33 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 2\u001b[0;m"
+}
+2026-03-28 11:17:33 [INFO]: Starting error classification {}
+2026-03-28 11:17:39 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 0.9,
+  "severity": "medium"
+}
+2026-03-28 11:17:39 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415010894,
+  "dryRun": false
+}
+2026-03-28 11:17:39 [INFO]: Execution tracked {
+  "pipelineId": 2415010894,
+  "projectId": 80648230,
+  "status": "resolved"
+}
+2026-03-28 11:19:15 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 11:19:15 [INFO]: Starting error classification {}
+2026-03-28 11:19:20 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 0.9,
+  "severity": "low"
+}
+2026-03-28 11:19:20 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415011716,
+  "dryRun": false
+}
+2026-03-28 11:19:20 [INFO]: Execution tracked {
+  "pipelineId": 2415011716,
+  "projectId": 80648230,
+  "status": "resolved"
+}
+2026-03-28 11:23:25 [INFO]: Server running on port 3000 {}
+2026-03-28 11:23:34 [INFO]: Server running on port 3000 {}
+2026-03-28 11:24:21 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 11:24:21 [INFO]: Starting error classification {}
+2026-03-28 11:24:26 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 0.9,
+  "severity": "low"
+}
+2026-03-28 11:24:26 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415014237,
+  "dryRun": false
+}
+2026-03-28 11:24:26 [INFO]: Execution tracked {
+  "pipelineId": 2415014237,
+  "projectId": 80648230,
+  "status": "resolved"
+}
+2026-03-28 11:24:27 [INFO]: ✅ Slack notification sent {
+  "project": "ci-agent",
+  "errorType": "code_error",
+  "action": "notify"
+}
+2026-03-28 11:35:23 [INFO]: Server running on port 3000 {}
+2026-03-28 11:35:48 [INFO]: Server running on port 3000 {}
+2026-03-28 11:36:31 [WARN]: BrightData API call failed {
+  "error": "Request failed with status code 404",
+  "keyword": "Job failed: exit code 1\u001b[0;m"
+}
+2026-03-28 11:36:31 [INFO]: Starting error classification {}
+2026-03-28 11:36:37 [INFO]: LLM analysis successful {
+  "type": "code_error",
+  "confidence": 0.9,
+  "severity": "low"
+}
+2026-03-28 11:36:37 [INFO]: Executing action {
+  "action": "notify",
+  "pipelineId": 2415026625,
+  "dryRun": false
+}
+2026-03-28 11:36:37 [INFO]: Execution tracked {
+  "pipelineId": 2415026625,
+  "projectId": 80648230,
+  "status": "resolved"
+}
+2026-03-28 11:36:38 [INFO]: ✅ Slack notification sent {
+  "project": "ci-agent",
+  "errorType": "code_error",
+  "action": "notify"
+}
