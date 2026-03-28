@@ -32,18 +32,35 @@ router.post("/gitlab", async (req, res) => {
     try {
         const event = req.body;
 
-        // ✅ STEP 1: Validate event
-        if (
-            event.object_kind !== "pipeline" ||
-            event.object_attributes.status !== "failed"
-        ) {
+        // ✅ STEP 1: Validate event structure
+        if (!event || typeof event !== 'object') {
+            log.warn("Malformed webhook - empty or non-object body", { requestId });
+            return res.status(400).json({ error: "Invalid event" });
+        }
+
+        if (event.object_kind !== "pipeline") {
+            log.debug("Ignoring non-pipeline event", { requestId });
+            return res.sendStatus(200);
+        }
+
+        if (!event.object_attributes?.status) {
+            log.warn("Missing object_attributes.status", { requestId });
+            return res.sendStatus(200);
+        }
+
+        if (event.object_attributes.status !== "failed") {
             log.debug("Ignoring non-failure event", { requestId });
             return res.sendStatus(200);
         }
 
+        if (!event.project || !event.project.id) {
+            log.warn("Event missing project data", { requestId });
+            return res.status(400).json({ error: "Missing project info" });
+        }
+
         const projectId = event.project.id;
         const pipelineId = event.object_attributes.id;
-        const projectName = event.project.name;
+        const projectName = event.project.name || "Unknown";
 
         log.info("❌ Pipeline failed", {
             requestId,
