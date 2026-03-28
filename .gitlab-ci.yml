@@ -6,3 +6,4 @@ fail_job:
   script:
     - echo "Forcing pipeline failure"
     - exit 1
+# trigger again
