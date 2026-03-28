@@ -45,7 +45,6 @@ Build an intelligent CI/CD monitoring system that autonomously detects, analyzes
 - **Action Selection**: Error-type specific per playbook
 - **Validation**: Multi-layer safety checks
 - **Limits**: Max 2 retries per pipeline (prevents loops)
-- **Cooldown**: Action-specific delays between executions
 
 **Available Actions**:
 ```
